@@ -1,0 +1,123 @@
+import { StyleSheet } from "react-native";
+
+export const PALETTE = {
+  darkGreen: "#036e05ff",
+  mediumGreen: "#2e7d32",
+  lightGreen: "#c8e6c9",
+  limeGreen: "#7cb342",
+  yellow: "#fbc02d",
+  white: "#ffffff",
+  lightGray: "#f4f6f8",
+  darkGray: "#333333",
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: PALETTE.white,
+  },
+  scrollContent: {
+    padding: 20,
+    paddingBottom: 40,
+  },
+  loadingText: {
+    marginTop: 10,
+    fontSize: 16,
+    color: PALETTE.mediumGreen,
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: "bold",
+    color: PALETTE.darkGreen,
+    textAlign: "center",
+    marginBottom: 20,
+    marginTop: 10,
+  },
+  profileCard: {
+    backgroundColor: PALETTE.white,
+    borderRadius: 12,
+    padding: 16,
+    marginBottom: 20,
+    borderLeftWidth: 5,
+    borderLeftColor: PALETTE.mediumGreen,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.08,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  cardTitle: {
+    fontSize: 18,
+    fontWeight: "700",
+    color: PALETTE.darkGreen,
+    marginBottom: 12,
+    borderBottomWidth: 2,
+    borderBottomColor: PALETTE.lightGreen,
+    paddingBottom: 8,
+  },
+  profileRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    paddingVertical: 6,
+    borderBottomWidth: 1,
+    borderBottomColor: "#f0f0f0",
+  },
+  profileLabel: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#666",
+  },
+  profileValue: {
+    fontSize: 14,
+    fontWeight: "700",
+    color: PALETTE.mediumGreen,
+    textAlign: "right",
+    flex: 1,
+    marginLeft: 10,
+  },
+  button: {
+    backgroundColor: PALETTE.mediumGreen,
+    paddingVertical: 16,
+    borderRadius: 12,
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: 20,
+    shadowColor: PALETTE.mediumGreen,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+    elevation: 4,
+  },
+  buttonDisabled: {
+    backgroundColor: "#a5d6a7",
+    opacity: 0.7,
+  },
+  buttonText: {
+    color: PALETTE.white,
+    fontSize: 16,
+    fontWeight: "700",
+  },
+  recommendationCard: {
+    backgroundColor: PALETTE.lightGray,
+    borderRadius: 12,
+    padding: 16,
+    marginTop: 10,
+    borderLeftWidth: 5,
+    borderLeftColor: PALETTE.limeGreen,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.08,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  recommendationText: {
+    fontSize: 14,
+    lineHeight: 22,
+    color: PALETTE.darkGray,
+    marginTop: 10,
+  },
+});
+
+export default styles;

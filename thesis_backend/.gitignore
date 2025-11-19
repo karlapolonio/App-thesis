@@ -1,0 +1,6 @@
+thesis_G9_backend/
+__pycache__
+.env
+.DS_Store
+route/__pycache__
+database/__pycache__
